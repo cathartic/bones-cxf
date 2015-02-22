@@ -1,0 +1,6 @@
+rootProject.name = 'bones-cxf'
+include ':bones-model', ':bones-database', ':bones-service'
+
+project(':bones-model').projectDir = "$rootDir/model" as File
+project(':bones-database').projectDir = "$rootDir/database" as File
+project(':bones-service').projectDir = "$rootDir/service" as File

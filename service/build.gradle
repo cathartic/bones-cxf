@@ -1,0 +1,15 @@
+description = 'Bones CXF - Service'
+
+apply plugin: 'war'
+apply plugin: 'jetty'
+
+dependencies {
+    compile project(':bones-model')
+    compile project(':bones-database')
+    compile group: 'com.fasterxml.jackson.jaxrs', name: 'jackson-jaxrs-json-provider', version: '2.5.1'
+    compile group: 'org.apache.cxf', name: 'cxf-rt-frontend-jaxrs', version: '3.0.4'
+    compile group: 'org.springframework', name: 'spring-web', version: '4.1.5.RELEASE'
+    compile group: 'org.springframework', name: 'spring-webmvc', version: '4.1.5.RELEASE'
+    testCompile group: 'org.springframework', name: 'spring-test', version: '4.1.5.RELEASE'
+    testCompile group: 'org.eclipse.jetty.aggregate', name: 'jetty-all', version: '9.2.8.v20150217'
+}

@@ -1,0 +1,6 @@
+description = 'Bones CXF - Database'
+
+dependencies {
+    compile project(':bones-model')
+    compile group: 'org.springframework.data', name: 'spring-data-mongodb', version: '1.6.2.RELEASE'
+}
